@@ -1,0 +1,29 @@
+{
+  "snapshot_id": "20260809T031736Z",
+  "pages": [
+    {
+      "page": "player_count",
+      "url": "https://fortnite.gg/player-count",
+      "fetched_at": "2026-08-09T03:17:36.292857+00:00",
+      "status": 200,
+      "bytes": 92321,
+      "file": "player_count_20260809T031736Z.html"
+    },
+    {
+      "page": "creators",
+      "url": "https://fortnite.gg/creators",
+      "fetched_at": "2026-08-09T03:17:38.510305+00:00",
+      "status": 200,
+      "bytes": 40678,
+      "file": "creators_20260809T031736Z.html"
+    },
+    {
+      "page": "creative",
+      "url": "https://fortnite.gg/creative",
+      "fetched_at": "2026-08-09T03:17:40.393658+00:00",
+      "status": 200,
+      "bytes": 82036,
+      "file": "creative_20260809T031736Z.html"
+    }
+  ]
+}

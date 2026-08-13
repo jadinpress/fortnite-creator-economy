@@ -1,0 +1,26 @@
+# Raw snapshot IS committed, unlike the steam-retention data/ directory: this is a
+# live single-point-in-time pull that cannot be regenerated identically later, so the
+# raw response is the reproducibility record, not an intermediate to regenerate.
+# (No exclusion rule needed for data/raw/ — nothing below is large enough to warrant one.)
+
+# Processed CSVs are NOT committed — they're fully regenerable from data/raw/ via
+# `python scripts/run_analysis.py` and would otherwise silently drift out of sync with it.
+data/processed/
+
+.venv/
+__pycache__/
+*.pyc
+
+*.duckdb
+*.duckdb.wal
+
+.DS_Store
+Thumbs.db
+
+# Tableau extracts regenerable from data/processed/
+*.hyper
+
+# Tableau workspace artifacts, not repo content
+*.twbx.bak
+*.twbr
+~*.twbr
